@@ -371,7 +371,7 @@
          * 
          * @note By default, `AT42QTXXXX_RESET_TIME` is set to `200` (Watchdog Timer@125ms and 30ms during first initializzation).
 		 */
-		#define AT42QTXXXX_RESET_TIME 200
+		#define AT42QTXXXX_RESET_TIME 350UL
 	#endif
 
     #include "../../../utils/macros/stringify.h"
