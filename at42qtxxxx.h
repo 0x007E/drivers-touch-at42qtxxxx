@@ -297,7 +297,6 @@
          * - `AT42QTXXXX_REGISTER_MAX_ON_DURATION_640MS_gc`: Limit on-duration to 640 ms.
          * - `AT42QTXXXX_REGISTER_MAX_ON_DURATION_40800MS_gc`: Limit on-duration to 40.8 s.
          */
-		 */
 		#define AT42QTXXXX_REGISTER_MAX_ON_DURATION 0x37
         
         #ifndef AT42QTXXXX_REGISTER_MAX_ON_DURATION_OFF_gc
@@ -543,7 +542,7 @@
                            void at42qtxxxx_init(void);
 	                       void at42qtxxxx_firmware_info(AT24QTXXXX_Chip_Identifier *id);
 	      AT24QTXXXX_Key_Status at42qtxxxx_key_status(AT42QTXXXX_Key key);
-                  unsigned char at42qtxxxx_key_status_all(AT42QTXXXX_Key key);
+                  unsigned char at42qtxxxx_key_status_all(void);
 	AT24QTXXXX_Detection_Status at42qtxxxx_detection_status(void);
 	               unsigned int at42qtxxxx_signal(AT42QTXXXX_Key key);
 	               unsigned int at42qtxxxx_reference_data(AT42QTXXXX_Key key);

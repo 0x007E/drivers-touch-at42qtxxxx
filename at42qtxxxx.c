@@ -90,7 +90,7 @@ void at42qtxxxx_firmware_info(AT24QTXXXX_Chip_Identifier *id)
  *
  * @return AT24QTXXXX_Key_Status_Touch if the specified key is detected as touched, otherwise AT24QTXXXX_Key_Status_Released.
  */
-AT24QTXXXX_Key_Status at42qtxxxx_key_status(AT42QTXXXX_Key key);
+AT24QTXXXX_Key_Status at42qtxxxx_key_status(AT42QTXXXX_Key key)
 {
     at42qtxxxx_buffer[0] = 0x00;
 
